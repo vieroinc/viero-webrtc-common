@@ -1,0 +1,37 @@
+{
+  "name": "@viero/webrtc-common",
+  "version": "1.0.1",
+  "description": "Common code used by @vieroinc WebRTC client and server libraries.",
+  "homepage": "https://github.com/vieroinc/viero-webrtc-common#readme",
+  "bugs": {
+    "url": "https://github.com/vieroinc/viero-webrtc-common/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vieroinc/viero-webrtc-common.git"
+  },
+  "contributors": [
+    {
+      "name": "Zoltan Gobolos",
+      "email": "zoltan.gobolos@viero.tv"
+    }
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf index.js",
+    "reset": "rm -rf index.js node_modules",
+    "babel": "babel src -d . --source-maps inline",
+    "prepublishOnly": "babel src -d . --source-maps inline"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
+}

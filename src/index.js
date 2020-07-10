@@ -30,3 +30,9 @@ VieroWebRTCCommon.EVENT = {
   },
   ERROR: 'VieroWebRTCCommonEventError',
 };
+
+VieroWebRTCCommon.WORD = {
+  HELLO: 'VieroWebRTCCommonWordHello',
+  SDP: 'VieroWebRTCCommonWordSdp',
+  CDT: 'VieroWebRTCCommonWordCdt',
+};
